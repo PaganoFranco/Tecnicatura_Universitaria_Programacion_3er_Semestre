@@ -8,6 +8,6 @@ package ar.com.system2023.mundopc;
  *
  * @author Franc
  */
-class DispositivoEntradatring {
+public class Raton {
     
 }
