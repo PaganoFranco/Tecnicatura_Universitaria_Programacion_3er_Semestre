@@ -8,6 +8,7 @@ public class Computadora {
   //Creamos sus atributos
     private final int idComputadora;
     private String nombre;
+  //Utilizamos las clases Monitor, Teclado y Raton. (Re.acion de agregacion)
     private Monitor monitor;
     private Teclado teclado;
     private Raton raton;
@@ -29,7 +30,6 @@ public class Computadora {
     }
     
   //Creamos los getter and setter
-    
     public String getNombre() {
         return this.nombre;
     }
