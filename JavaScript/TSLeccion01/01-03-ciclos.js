@@ -5,3 +5,11 @@ while(contador < 3){
     contador++;
 }
 console.log("Fine del ciclo while");
+
+//do while
+let conteo = 0;
+do{
+    console.log(conteo);
+    conteo++;
+}while(conteo < 3);
+console.log("Fine del ciclo do while");
