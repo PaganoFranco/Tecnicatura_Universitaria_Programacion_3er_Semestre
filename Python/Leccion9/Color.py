@@ -1,3 +1,3 @@
 class Color:
-    def __int__(self, color):
+    def __init__(self, color):
         self.color = color
