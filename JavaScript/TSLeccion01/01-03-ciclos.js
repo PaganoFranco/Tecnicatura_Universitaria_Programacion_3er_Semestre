@@ -1,4 +1,4 @@
-//While
+//while
 let contador = 0;
 while(contador < 3){
     console.log(contador);
@@ -13,3 +13,8 @@ do{
     conteo++;
 }while(conteo < 3);
 console.log("Fine del ciclo do while");
+
+//for
+for(let contando = 0; contando < 3;  contando++){
+    console.log(contando);
+}
