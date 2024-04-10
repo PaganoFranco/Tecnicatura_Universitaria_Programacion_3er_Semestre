@@ -1,9 +1,27 @@
 from Cuadrado import Cuadrado
+from Rectangulo import Rectangulo
 
-cuadrado1 = Cuadrado(7, "verde")
-print(cuadrado1.ancho)
-print(cuadrado1.alto)
+cuadrado1 = Cuadrado(7, "Azul")
+print("Cuadrado 1")
+print(f"Ancho: {cuadrado1.ancho}")
+print(f"Alto: {cuadrado1.alto}")
 print(f"Calculo del area del cuadrado: {cuadrado1.calcular_area()}")
 
 # MRO = Method Resolution Order
 print(Cuadrado.mro())
+
+print(cuadrado1)
+
+cuadrado2 = Cuadrado(2, "Violeta")
+print("Cuadrado 2")
+print(f"Ancho: {cuadrado2.ancho}")
+print(f"Alto: {cuadrado2.alto}")
+print(f"Calculo del area del cuadrado: {cuadrado2.calcular_area()}")
+print(cuadrado1)
+
+rectangulo1 = Rectangulo(3, 2, "Rojo")
+print("Rectangulo 1")
+print(f"Ancho: {rectangulo1.ancho}")
+print(f"Alto: {rectangulo1.alto}")
+print(f"Calculo del area del rectangulo: {rectangulo1.calcular_area()}")
+print(rectangulo1)
