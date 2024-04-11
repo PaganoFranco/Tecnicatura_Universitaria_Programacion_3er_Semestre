@@ -29,11 +29,14 @@ for(let contando = 0; contando < 10; contando++){
 }
 console.log("Termina el ciclo al encontrar el primer numero los pares");
 
-// la palabra continue
+// la palabra continue y etiquetas labels
+inicio: 
 for(let contando = 0; contando <= 10; contando++){
     if(contando % 2 !== 0){
-        continue; // ir a la siguiente iteracion
+        break inicio; // ir a la siguiente iteracion
     }
     console.log(contando); //Muestra todos los pares
 }
 console.log("Termina el ciclo");
+
+
