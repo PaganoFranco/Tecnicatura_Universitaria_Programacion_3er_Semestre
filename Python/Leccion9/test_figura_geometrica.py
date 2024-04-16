@@ -1,7 +1,8 @@
 from Cuadrado import Cuadrado
 from Rectangulo import Rectangulo
 
-cuadrado1 = Cuadrado(7, "Azul")
+print("Creacion de objeto clase Cuadradro".center(50, "_"))
+cuadrado1 = Cuadrado(5, "Azul")
 print("Cuadrado 1")
 print(f"Ancho: {cuadrado1.ancho}")
 print(f"Alto: {cuadrado1.alto}")

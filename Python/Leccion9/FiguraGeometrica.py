@@ -1,8 +1,14 @@
 class FiguraGeometrica:
     # Constructor de la clase FiguraGeometrica
     def __init__(self, ancho, alto):
-        self.ancho = ancho  # Asigna el ancho proporcionado al atributo ancho
-        self.alto = alto    # Asigna el alto proporcionado al atributo alto
+        if 0 < ancho < 10:
+            self.ancho = ancho  # Asigna el ancho proporcionado al atributo ancho
+        else:
+            self.ancho = 0
+        if 0 < alto < 10:
+            self.alto = alto    # Asigna el alto proporcionado al atributo alto
+        else:
+            self.alto = 0
 
     # Getter para obtener el valor del ancho
     @property
