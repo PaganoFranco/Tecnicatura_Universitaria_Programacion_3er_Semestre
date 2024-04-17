@@ -5,12 +5,13 @@ from Rectangulo import Rectangulo
 print("Creacion de objeto clase Cuadradro".center(50, "_"))
 cuadrado1 = Cuadrado(8, "Azul")
 cuadrado1.alto = 7
+# cuadrado1.ancho = 7
 # print(f"Ancho: {cuadrado1.ancho}")
 #  print(f"Alto: {cuadrado1.alto}")
 print(f"Calculo del area del cuadrado: {cuadrado1.calcular_area()}")
 
 # MRO = Method Resolution Order
-# print(Cuadrado.mro())
+print(Cuadrado.mro())
 
 print(cuadrado1)
 
