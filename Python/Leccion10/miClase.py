@@ -5,6 +5,11 @@ class MiClase:
     def __init__(self, variable_instancia): # La variable de instacia, de diferentes valores
         self.variable_instancia = variable_instancia
 
+
+    @staticmethod
+    def metodo_estatico(): # Metodo estatico, se asocia a la clase
+        print(MiClase.variable_clase)
+
 print(MiClase.variable_clase)
 miClase1 = MiClase("Esta es una variable de instancia")
 print(miClase1.variable_instancia)
@@ -17,3 +22,6 @@ MiClase.variable_clase2 = "Valor de variable de clase 2"
 print(MiClase.variable_clase2)
 print(miClase1.variable_clase2)
 print(miClase1.variable_clase2)
+
+# llamar al metodo estatico
+MiClase.metodo_estatico()
