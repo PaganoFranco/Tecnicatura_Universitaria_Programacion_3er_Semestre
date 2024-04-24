@@ -30,3 +30,7 @@ console.log(autos);
 autos[6] = "Renault";
 console.log(autos);
 
+// Como preguntar si es una Array o Arreglo
+console.log(Array.isArray(autos)); // Devolvera un booleano
+
+console.log(autos instanceof Array); // Pregunta si la variable es una instancia de la clase Array
