@@ -27,4 +27,3 @@ persona4 = Persona("Agos", 25)
 print(persona4)
 
 print(f"Valor contador persona: {Persona.contador_personas}")
-
