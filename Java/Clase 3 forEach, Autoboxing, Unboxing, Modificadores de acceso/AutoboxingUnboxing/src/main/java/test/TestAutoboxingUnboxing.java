@@ -7,6 +7,11 @@ public class TestAutoboxingUnboxing {
         /*
             Clases envolventes de tipos primitivos
             int = la clase envolvente es integer
+            long = la clase envolvente es long
+            float = la clase envolvente es Float
+            double = la clase envolvente es Boolean
+            char = la clase envolvente es Character
+            short = la clase envolvente es Short
         */
         
         int enteroPrim = 10; // Tipo primitivo
