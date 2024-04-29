@@ -7,10 +7,10 @@ public class Clase3 extends Clase1{
 
     private String atributosProtected;
     public Clase3 (){
-        super();
+        super("protected");
         this.atributoProtected = "Accedemos desde la clase hija";
         System.out.println("AtributosProtected = " + this.atributosProtected);
         this.atibutoPublic = "Es totalmente publico";
-        
+        this.metodoProtected();
     }
 }
