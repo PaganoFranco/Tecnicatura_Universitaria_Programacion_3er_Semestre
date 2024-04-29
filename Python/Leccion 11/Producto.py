@@ -1,5 +1,5 @@
 class Producto:
-    contador_productos = 0;
+    contador_productos = 0
 
     def __init__(self, nombre, precio):
         Producto.contador_productos += 1 # Aumento para la variable de clase
@@ -28,7 +28,10 @@ class Producto:
     def __str__(self):
         return f"Id producto: {self._id_producto}, Nombre: {self._nombre}, Precio: {self._precio}"
 
+
     # Solo sirve para visualizar se la prueba se ejecuta desde aca
 if __name__ == "__main__":
     producto1 = Producto("Camiseta", 100.00)
+    print(producto1)
     producto2 = Producto("Pantalon", 150.00)
+    print(producto2)
