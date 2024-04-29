@@ -48,16 +48,16 @@ producto5 = Producto("Medias", 20.00)
 producto6 = Producto("Musculosa", 250.00)
 
 # Los agregamos a la lista de Orden 2 por medio de agregar_productos
-orden2.agregar_producto(producto3)
-print(orden2)
+# orden2.agregar_producto(producto3)
+# print(orden2)
 
-orden2.agregar_producto(producto4)
-print(orden2)
+# orden2.agregar_producto(producto4)
+# print(orden2)
 
 # creamos una nueva lista
-productos2 = [producto5, producto6]
-orden3 = Orden(productos2)
+# productos2 = [producto5, producto6]
+# orden3 = Orden(productos2)
 
 # Le agregamos la orden3 a la orden2
-orden2.agregar_producto(orden3)
-print(orden2)
+# orden2.agregar_producto(orden3)
+# print(orden2)
