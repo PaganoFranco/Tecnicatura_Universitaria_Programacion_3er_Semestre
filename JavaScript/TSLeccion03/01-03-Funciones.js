@@ -11,3 +11,8 @@ miFuncion(5, 4);
 
 let resultado = miFuncion(6, 7);
 console.log(resultado);
+
+//Declaramos una funcion de tipo expresion o anonima 
+let x = function(a, b){return a + b}; //Necesita cierre con punto y coma
+resultado = x(5, 6); // al llamar se pone la variable y parentesis
+console.log(resultado);
