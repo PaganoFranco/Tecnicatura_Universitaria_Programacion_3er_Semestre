@@ -16,3 +16,8 @@ console.log(resultado);
 let x = function(a, b){return a + b}; //Necesita cierre con punto y coma
 resultado = x(5, 6); // al llamar se pone la variable y parentesis
 console.log(resultado);
+
+//Funciones de tipo self y invoking
+(function(a, b){
+    console.log("Ejecutando la funcion: " + (a+b));
+}) (9,6);
