@@ -21,3 +21,14 @@ console.log(resultado);
 (function(a, b){
     console.log("Ejecutando la funcion: " + (a+b));
 }) (9,6);
+
+console.log(typeof miFuncion);
+function miFuncion2(a, b){
+    console.log(arguments.length);
+}
+
+miFuncion2(5, 7, 3, 6);
+
+//toString
+var miFuncionTexto = miFuncion2.toString();
+console.log(miFuncionTexto);
