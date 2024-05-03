@@ -9,13 +9,14 @@ public class TesteSobreescritura {
        imprimir(empleado1);
        // System.out.println("empleado1 = " + empleado1.obtenerDetalles());
 
-       Gerente gerente1 = new Gerente("Franco", 5000, "Sistemas");
+       empleado1 = new Gerente("Franco", 5000, "Sistemas");
        // System.out.println("gerente1 = " + gerente1.obtenerDetalles());
-       imprimir(gerente1);
+       imprimir(empleado1);
     }
     
     public static void imprimir(Empleado empleado) {
-        System.out.println("empleado = " + empleado.obtenerDetalles());
+        String detalles = empleado.obtenerDetalles();
+        System.out.println("detalles = " + detalles);
     }
     
     
