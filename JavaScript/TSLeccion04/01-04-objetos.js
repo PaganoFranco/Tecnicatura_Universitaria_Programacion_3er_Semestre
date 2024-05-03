@@ -32,3 +32,14 @@ for(propiedad in persona){
     console.log(propiedad);
     console.log(persona[propiedad]);
 }
+
+// Agregar, cambiar y eliminar propiedades de un objeto
+persona.apellido = "Perez"; // Cambiar dinamicamente un valor del objeto
+console.log(persona.apellido);
+
+persona.apellida = "Perez"; // Agregar dinamicamente un valor del objeto
+console.log(persona.apellida);
+
+persona.apellida = "Siri"
+delete persona.apellida; //Elimina el error
+console.log(persona.apellida);
