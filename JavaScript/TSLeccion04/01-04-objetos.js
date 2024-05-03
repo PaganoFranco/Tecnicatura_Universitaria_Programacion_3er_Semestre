@@ -24,3 +24,11 @@ persona2.nombre = "Franco"
 persona2.direccion = "Av. Roca 1801"
 persona2.telefono = "2604694746"
 console.log(persona2.telefono);
+
+console.log(persona["apellido"]); // Accedemos como si fuera un arreglo
+
+// for inr 
+for(propiedad in persona){
+    console.log(propiedad);
+    console.log(persona[propiedad]);
+}
