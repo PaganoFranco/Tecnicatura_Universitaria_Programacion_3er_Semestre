@@ -1,11 +1,12 @@
 from mundo_pc.dispositivo_entrada import DispositivoEntrada
 
-class Raton(DispositivoEntrada):
-    contador_ratones = 0
+
+class Teclado(DispositivoEntrada):
+    contador_teclados = 0
 
     def __init__(self, marca, tipo_entrada):
-        Raton.contador_ratones += 1
-        self._id_raton = Raton.contador_ratones
+        Teclado.contador_teclados += 1
+        self._id_teclado = Teclado.contador_teclados
         super().__init__(marca, tipo_entrada)
 
     # Método getter para el atributo marca
@@ -25,18 +26,18 @@ class Raton(DispositivoEntrada):
         self._tipo_entrada = tipo_entrada
 
     def __str__(self):
-        return f"Id: {self._id_raton}, Marca: {self._marca}, Tipo Entrada: {self._tipo_entrada}"
+        return f"Id: {self._id_teclado}, Marca: {self._marca}, Tipo Entrada: {self._tipo_entrada}"
 
 
-# Hacemos una prueba de testeo
+# Prueba de la clase Teclado
 if __name__ == "__main__":
-    raton1 = Raton("HP", "USB")
-    raton2 = Raton("Acer", "Bluetooth")
-    print(raton1)
-    print(raton2)
+    teclado1 = Teclado("HP", "USB")
+    teclado2 = Teclado("Gamer", "Bluetooth")
+    print(teclado1)
+    print(teclado2)
 
     # Probando los métodos set y get
-    raton1.set_marca("Logitech")
-    raton1.set_tipo_entrada("Bluetooth")
-    print("Marca de raton1 después de cambio:", raton1.get_marca())
-    print("Tipo de entrada de raton1 después de cambio:", raton1.get_tipo_entrada())
+    teclado1.set_marca("HP")
+    teclado1.set_tipo_entrada("USB-C")
+    print("Marca de teclado1 después de cambio:", teclado1.get_marca())
+    print("Tipo de entrada de teclado1 después de cambio:", teclado1.get_tipo_entrada())
