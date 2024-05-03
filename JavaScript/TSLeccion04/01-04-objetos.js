@@ -45,3 +45,25 @@ console.log(persona);
 delete persona.apellida; //Elimina el error
 //console.log(persona.apellida);
 console.log(persona);
+
+//Distintas forma de imprimir un objeto
+//N°1 : la mas sencilla: concatenar cada valor de cada propiedad
+console.log("Distintas formas de imprimir un objeto: ")
+console.log("Forma 1: concatenando propiedades");
+console.log(persona.nombre+", "+persona.apellido);
+
+//N°2: A traves del ciclo for in
+console.log("Forma 2: ciclo for in");
+for(nombrePropiedad in persona){
+    console.log(persona[nombrePropiedad]);
+}
+
+//N°3: La funcion Objet.values()
+console.log("Forma 3: funcion Object.values()");
+let personaArrray = Object.values(persona);
+console.log(personaArrray);
+
+//N°4: Utilizaremos el método JSON.stringifi
+console.log("Forma 4: método JSON.stringifi");
+let personaString = JSON.stringify(persona);
+console.log(personaString)
