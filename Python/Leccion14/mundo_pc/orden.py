@@ -11,11 +11,11 @@ class Orden:
         self._computadoras.append(computadoras)
 
     def __str__(self):
-        computadora_str = ""
-        for computado in self._computadoras:
-            computadora_str += computado.__str__()
+        computadoras_str = ""
+        for computadora in self._computadoras:
+            computadoras_str += computadora.__str__()
         return f"""
             Orden: {self._id_orden}
-            Computadoras: {computadora_str}
+            Computadoras: {computadoras_str}
         """
 
