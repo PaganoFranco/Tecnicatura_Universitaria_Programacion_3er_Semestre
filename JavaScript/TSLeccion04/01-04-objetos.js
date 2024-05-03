@@ -19,3 +19,8 @@ console.log(persona.edad);
 console.log(persona);
 console.log(persona.nombreCompleto());
 
+let persona2 = new Object(); // Debe crear un nuevo objeto en memoria
+persona2.nombre = "Franco"
+persona2.direccion = "Av. Roca 1801"
+persona2.telefono = "2604694746"
+console.log(persona2.telefono);
