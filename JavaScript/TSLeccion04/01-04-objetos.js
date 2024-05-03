@@ -18,21 +18,21 @@ console.log(persona.email);
 console.log(persona.edad);
 console.log(persona);
 console.log(persona.nombreCompleto());
-
+console.log("Ejecutando con un objeto");
 let persona2 = new Object(); // Debe crear un nuevo objeto en memoria
 persona2.nombre = "Franco"
 persona2.direccion = "Av. Roca 1801"
 persona2.telefono = "2604694746"
 console.log(persona2.telefono);
-
+console.log("Creamos un nuevo objeto");
 console.log(persona["apellido"]); // Accedemos como si fuera un arreglo
-
+console.log("Usamos el ciclo for in")
 // for inr 
 for(propiedad in persona){
     console.log(propiedad);
     console.log(persona[propiedad]);
 }
-
+console.log("Cambiamos y eliminamos un error");
 // Agregar, cambiar y eliminar propiedades de un objeto
 persona.apellido = "Perez"; // Cambiar dinamicamente un valor del objeto
 console.log(persona.apellido);
@@ -41,5 +41,7 @@ persona.apellida = "Perez"; // Agregar dinamicamente un valor del objeto
 console.log(persona.apellida);
 
 persona.apellida = "Siri"
+console.log(persona);
 delete persona.apellida; //Elimina el error
-console.log(persona.apellida);
+//console.log(persona.apellida);
+console.log(persona);
