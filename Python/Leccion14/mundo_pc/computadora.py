@@ -14,6 +14,38 @@ class Computadora:
         self._teclado = teclado
         self._raton = raton
 
+    # Método getter para el atributo nombre
+    def get_nombre(self):
+        return self._nombre
+
+    # Método setter para el atributo nombre
+    def set_nombre(self, nombre):
+        self._nombre = nombre
+
+    # Método getter para el atributo monitor
+    def get_monitor(self):
+        return self._monitor
+
+    # Método setter para el atributo monitor
+    def set_monitor(self, monitor):
+        self._monitor = monitor
+
+    # Método getter para el atributo teclado
+    def get_teclado(self):
+        return self._teclado
+
+    # Método setter para el atributo teclado
+    def set_teclado(self, teclado):
+        self._teclado = teclado
+
+    # Método getter para el atributo raton
+    def get_raton(self):
+        return self._raton
+
+    # Método setter para el atributo raton
+    def set_raton(self, raton):
+        self._raton = raton
+
     def __str__(self):
         return f'''
             {self._nombre}: {self._id_computadora}
