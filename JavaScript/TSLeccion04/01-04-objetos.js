@@ -96,11 +96,13 @@ function Persona3(nombre, apellido, email){
 }
 let hijo = new Persona3("Franco", "Pagano", "francopaganoo@gmail.com");
 hijo.nombre = "Oscar"; //Modificamos el nombre
+hijo.telefono = "2604643121"; //Una propiedad exclusiva del objeto
 console.log(hijo);
 console.log(hijo.nombreCompleto()); //Utilizamos la funcion
 
 let madre = new Persona3("Viviana", "Pantaley", "Vivianap@gmail.com");
 console.log(madre);
+console.log(madre.telefono); //La propiedad no esta drfinida 
 console.log(madre.nombreCompleto());
 
 //Diferente formas de crear objetos
@@ -133,3 +135,10 @@ let miArreglo2 = []; // Recomendada
 let miFuncion1 = new function(){}; //todo despues de new es considerao objeto
 // Caso funtion 2 
 let miFuncion2 = function(){}; // Notacion simplificada y recomendada
+
+// Uso de protectores
+Persona3.prototype.telefono = "2604121314";
+console.log(hijo);
+console.log(madre.telefono);
+madre.telefono = "260411111";
+console.log(madre.telefono);
