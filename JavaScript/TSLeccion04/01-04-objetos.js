@@ -7,8 +7,18 @@ let persona = {
     apellido: "Gil",
     email: "cgil@gmail.com",
     edad: 30,
+    idioma: "es",
+    get lang(){
+        return this.idioma.toUpperCase(); //Convierte las minusculas a mayusculas 
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
+    },
     nombreCompleto: function(){ //método o funcion en JavaScript
         return this.nombre + " "+ this.apellido
+    },
+    get nombreEdad(){ //Este es el meotodo get
+        return "El Nombre es: " + this.nombre + " Edad: " + this.edad;
     }
 }
 
@@ -67,3 +77,11 @@ console.log(personaArrray);
 console.log("Forma 4: método JSON.stringifi");
 let personaString = JSON.stringify(persona);
 console.log(personaString)
+
+// Llamamos al metodo get
+console.log("Comenzamos a utilizar el metodo get: ")
+console.log(persona.nombreEdad);
+
+console.log("Comenzamos con el metodo get y set para idiomas")
+persona.lang = "en";
+console.log(persona.lang);
