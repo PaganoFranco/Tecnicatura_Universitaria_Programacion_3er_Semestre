@@ -12,6 +12,10 @@ except ZeroDivisionError as e:
 # Mas generico - Clase Padre
 except Exception as e:
     print(f"Exception - Ocurrio un error: {type(e)}")
+else:
+    print("No se arrojo ninguna excepcion")
+finally:
+    print("Ejercucion de este bloque finally")
 
 print(f"El resultado es: {resultado}")
 print("seguimos...")
