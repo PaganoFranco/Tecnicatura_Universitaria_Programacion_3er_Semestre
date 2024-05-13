@@ -1,8 +1,12 @@
+from NumerosigualesException import NumerosigualesException
+
 resultado = None
 
 try:
     a = int(input("Digite el primer numero: "))
     b = int(input("Digite el segundo  numero: "))
+    if a == b:
+        raise NumerosigualesException("Son numeros iguales")
     resultado = a / b # Modificamos
 # Mas especifico - Clases Hijas
 except TypeError as e:
