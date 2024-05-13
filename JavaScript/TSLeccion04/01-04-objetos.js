@@ -7,8 +7,18 @@ let persona = {
     apellido: "Gil",
     email: "cgil@gmail.com",
     edad: 30,
+    idioma: "es",
+    get lang(){
+        return this.idioma.toUpperCase(); //Convierte las minusculas a mayusculas 
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
+    },
     nombreCompleto: function(){ //método o funcion en JavaScript
         return this.nombre + " "+ this.apellido
+    },
+    get nombreEdad(){ //Este es el meotodo get
+        return "El Nombre es: " + this.nombre + " Edad: " + this.edad;
     }
 }
 
@@ -67,3 +77,90 @@ console.log(personaArrray);
 console.log("Forma 4: método JSON.stringifi");
 let personaString = JSON.stringify(persona);
 console.log(personaString)
+
+// Llamamos al metodo get
+console.log("Comenzamos a utilizar el metodo get: ")
+console.log(persona.nombreEdad);
+
+console.log("Comenzamos con el metodo get y set para idiomas")
+persona.lang = "en";
+console.log(persona.lang);
+
+function Persona3(nombre, apellido, email){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email; 
+    this.nombreCompleto = function(){
+        return this.nombre + " " + this.apellido;
+    }
+}
+let hijo = new Persona3("Franco", "Pagano", "francopaganoo@gmail.com");
+hijo.nombre = "Oscar"; //Modificamos el nombre
+hijo.telefono = "2604643121"; //Una propiedad exclusiva del objeto
+console.log(hijo);
+console.log(hijo.nombreCompleto()); //Utilizamos la funcion
+
+let madre = new Persona3("Viviana", "Pantaley", "Vivianap@gmail.com");
+console.log(madre);
+console.log(madre.telefono); //La propiedad no esta drfinida 
+console.log(madre.nombreCompleto());
+
+//Diferente formas de crear objetos
+// Caso Objeto n°1:
+let miObjeto = new Object(); // Esta es una opcion formal
+// Caso Objeto n°2: 
+let miObjeto2 = {}; //Esta opcion es breve y recomendad
+
+// Caso String n°1:
+let miCaddena1 = new String("Hola"); //Sintaxis formal
+// Caso String n°2:
+let miCaddena2 = "Hola" // Esta es la sintaxis simplificada y recomendada
+
+// Caso con numeros n°1: 
+let miNumero = new Number(1); //Es formal no recomendable
+// Caso con numeros n°2:
+let miNumero2 = 1; // Sintaxis recomendada
+
+// Caso boolean n°1:
+let miBoolean1 = new Boolean(false); //Formal
+// Caso boolean n°2:
+let miBoolean2 = false; // Recomendada 
+
+// Caso Arreglo 1:
+let miArreglo1 = new Array(); // Formal
+// Caso Arreglo 2: 
+let miArreglo2 = []; // Recomendada 
+
+// Caso funtion 1
+let miFuncion1 = new function(){}; //todo despues de new es considerao objeto
+// Caso funtion 2 
+let miFuncion2 = function(){}; // Notacion simplificada y recomendada
+
+// Uso de protectores
+Persona3.prototype.telefono = "2604121314";
+console.log(hijo);
+console.log(madre.telefono);
+madre.telefono = "260411111";
+console.log(madre.telefono);
+
+//Uso de call
+let persona4 = {
+    nombre: "Juan",
+    apellido: "Perez",
+    nombreCompleto2: function(titulo, telefono){
+        return titulo + " " + this.nombre + " " + this.apellido + " " + telefono; 
+        //return this.nombre + " " + this.apellido;
+    }
+}
+
+let persona5 = {
+    nombre: "Carlos",
+    apellido: "Aguirre"
+}
+
+console.log(persona4.nombreCompleto2("Lic.", "2604112233"));
+console.log(persona4.nombreCompleto2.call(persona5, "ing", "2604445566"));
+
+// Metodo Apply
+let arreglo = ["ing.", "2604778899"];
+console.log(persona4.nombreCompleto2.apply(persona5,arreglo))
