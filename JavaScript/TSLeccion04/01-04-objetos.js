@@ -85,3 +85,15 @@ console.log(persona.nombreEdad);
 console.log("Comenzamos con el metodo get y set para idiomas")
 persona.lang = "en";
 console.log(persona.lang);
+
+function Persona3(nombre, apellido, email){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email; 
+}
+let hijo = new Persona3("Franco", "Pagano", "francopaganoo@gmail.com");
+hijo.nombre = "Oscar";
+console.log(hijo);
+
+let madre = new Persona3("Viviana", "Pantaley", "Vivianap@gmail.com");
+console.log(madre);
