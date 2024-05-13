@@ -90,10 +90,15 @@ function Persona3(nombre, apellido, email){
     this.nombre = nombre;
     this.apellido = apellido;
     this.email = email; 
+    this.nombreCompleto = function(){
+        return this.nombre + " " + this.apellido;
+    }
 }
 let hijo = new Persona3("Franco", "Pagano", "francopaganoo@gmail.com");
-hijo.nombre = "Oscar";
+hijo.nombre = "Oscar"; //Modificamos el nombre
 console.log(hijo);
+console.log(hijo.nombreCompleto()); //Utilizamos la funcion
 
 let madre = new Persona3("Viviana", "Pantaley", "Vivianap@gmail.com");
 console.log(madre);
+console.log(madre.nombreCompleto());
