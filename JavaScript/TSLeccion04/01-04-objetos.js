@@ -102,3 +102,34 @@ console.log(hijo.nombreCompleto()); //Utilizamos la funcion
 let madre = new Persona3("Viviana", "Pantaley", "Vivianap@gmail.com");
 console.log(madre);
 console.log(madre.nombreCompleto());
+
+//Diferente formas de crear objetos
+// Caso Objeto n°1:
+let miObjeto = new Object(); // Esta es una opcion formal
+// Caso Objeto n°2: 
+let miObjeto2 = {}; //Esta opcion es breve y recomendad
+
+// Caso String n°1:
+let miCaddena1 = new String("Hola"); //Sintaxis formal
+// Caso String n°2:
+let miCaddena2 = "Hola" // Esta es la sintaxis simplificada y recomendada
+
+// Caso con numeros n°1: 
+let miNumero = new Number(1); //Es formal no recomendable
+// Caso con numeros n°2:
+let miNumero2 = 1; // Sintaxis recomendada
+
+// Caso boolean n°1:
+let miBoolean1 = new Boolean(false); //Formal
+// Caso boolean n°2:
+let miBoolean2 = false; // Recomendada 
+
+// Caso Arreglo 1:
+let miArreglo1 = new Array(); // Formal
+// Caso Arreglo 2: 
+let miArreglo2 = []; // Recomendada 
+
+// Caso funtion 1
+let miFuncion1 = new function(){}; //todo despues de new es considerao objeto
+// Caso funtion 2 
+let miFuncion2 = function(){}; // Notacion simplificada y recomendada
