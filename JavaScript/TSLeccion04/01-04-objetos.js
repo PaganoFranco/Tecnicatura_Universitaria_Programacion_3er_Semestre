@@ -142,3 +142,20 @@ console.log(hijo);
 console.log(madre.telefono);
 madre.telefono = "260411111";
 console.log(madre.telefono);
+
+//Uso de call
+let persona4 = {
+    nombre: "Juan",
+    apellido: "Perez",
+    nombreCompleto2: function(titulo, telefono){
+        return titulo + " " + this.nombre + " " + this.apellido + " " + telefono; 
+    }
+}
+
+let persona5 = {
+    nombre: "Carlos",
+    apellido: "Perez"
+}
+
+console.log(persona4.nombreCompleto2("Lic.", "2604112233"));
+console.log(persona4.nombreCompleto2.call(persona5, "ing", "2604445566"));
