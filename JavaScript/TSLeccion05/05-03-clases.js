@@ -1,3 +1,6 @@
+// Histing ¿
+//let persona3 = new Persona("Juan Pablo", "Del Pozzi"); Esto no se puede hacer
+
 class Persona{ 
     //Creamos un constructor
     constructor(nombre, apellido){
