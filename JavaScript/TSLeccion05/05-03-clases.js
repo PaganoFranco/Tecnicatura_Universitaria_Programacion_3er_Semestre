@@ -40,6 +40,10 @@ class Empleado extends Persona{
     set departamento(departamento){
         this._departamento = departamento;
     }
+
+    nombreCompleto(){
+        return this._nombre + " " + this.apellido;
+    }
 }
 
 
@@ -62,4 +66,4 @@ console.log(persona2.apellido);
 
 let empleado1 = new Empleado("Juan", "Perez", "Sistemas");
 console.log(empleado1);
-console.log(empleado1.nombre);
+console.log(empleado1.nombreCompleto());
