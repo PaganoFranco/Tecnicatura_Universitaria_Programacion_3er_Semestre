@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>150</x><y>100</y><w>210</w><h>110</h></coordinates><panel_attributes>Pelicula
+--
+-nombre: str
+--
++__str__()
+--
+Responsabilidades:
+-- Representa un objeto pelicula</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>90</y><w>230</w><h>130</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>60</y><w>100</w><h>30</h></coordinates><panel_attributes>dominio</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>60</y><w>100</w><h>30</h></coordinates><panel_attributes>servicio</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>100</y><w>210</w><h>150</h></coordinates><panel_attributes>CatalogoPeliculas
+--
++ruta_archivo: str &lt;&lt;static&gt;&gt;
+--
++agregar_pelicula(Pelicula) &lt;&lt;static&gt;&gt;
++ listar_peliculas() &lt;&lt;static&gt;&gt;
++ eliminar() &lt;&lt;static&gt;&gt;
+--
+Responsabilidades:
+-- Realizar las operaciones sobre
+el archivo de peliculas.txt</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>30</y><w>570</w><h>390</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>270</y><w>210</w><h>130</h></coordinates><panel_attributes>test_catalogo_peliculas.py
+--
+Responsabilidades:
+-- Contiene un menu con opciones:
+	1) Agregar pelicula
+	2) Listar peliculas
+	3) Eliminar archivos de peliculas
+	4) Salir</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>90</y><w>230</w><h>170</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>140</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;agrega&gt;&gt;</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element></diagram>
