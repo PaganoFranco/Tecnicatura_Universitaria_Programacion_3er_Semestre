@@ -3,14 +3,14 @@
 
 class Persona{ //Clase padre
 
-    static constadorObjetosPersona = 0; //Atributo estatico
-    email = "Valor default email"; //Atributo no estatico
+    static constadorPersonas = 0; //Atributo estatico
+    //email = "Valor default email"; //Atributo no estatico
 
     //Creamos un constructor
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
-        Persona.constadorObjetosPersona++
+        this.idPersona = ++Persona.constadorPersonas;
         console.log("Se incrementa el contador: "+ Persona.constadorObjetosPersona);
     }
 
@@ -33,7 +33,7 @@ class Persona{ //Clase padre
     }
 
     nombreCompleto(){
-        return this._nombre + " " + this.apellido;
+        return this.idPersona+" "+this._nombre + " " + this.apellido;
     }
 
     //Sobreescribiendo el metodo de la clase padre (Object)
@@ -113,3 +113,10 @@ console.log(Empleado.constadorObjetosPersona);
 console.log(persona1.email);
 console.log(empleado1.email);
 //console.log(Persona.email); No se puede acceder desde la clase, ya que no es estatico
+console.log(persona1.toString());
+console.log(persona2.toString());
+console.log(empleado1.toString());
+console.log(Persona.constadorPersonas);
+let persona3 = new Persona("Carla", "Pampera");
+console.log(persona3.toString());
+console.log(Persona.constadorPersonas);
