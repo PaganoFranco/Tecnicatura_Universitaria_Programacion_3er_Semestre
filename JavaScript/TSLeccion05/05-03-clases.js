@@ -6,12 +6,20 @@ class Persona{ //Clase padre
     static constadorPersonas = 0; //Atributo estatico
     //email = "Valor default email"; //Atributo no estatico
 
+    static get MAX_OBJ(){ //Este metodo simula una constante
+        return 5;
+    }
+
     //Creamos un constructor
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
+        if(Persona.constadorPersonas < Persona.MAX_OBJ){
         this.idPersona = ++Persona.constadorPersonas;
-        console.log("Se incrementa el contador: "+ Persona.constadorObjetosPersona);
+        }
+        else{
+            console.log("Se a superado el maximo de objetos creados")
+        }
     }
 
     //Creamos el metodo get
@@ -120,3 +128,12 @@ console.log(Persona.constadorPersonas);
 let persona3 = new Persona("Carla", "Pampera");
 console.log(persona3.toString());
 console.log(Persona.constadorPersonas);
+
+console.log(Persona.MAX_OBJ); 
+Persona.MAX_OBJ = 10; // No se puede modificar, ni alterar
+console.log(Persona.MAX_OBJ); 
+
+let persona4 = new Persona("Franco", "Pantaley");
+console.log(persona4.toString());
+let persona5 = new Persona("Julieta", "Fernandez");
+console.log(persona5.toString());
