@@ -3,7 +3,8 @@
 
 class Persona{ //Clase padre
 
-    static constadorObjetosPersona = 0;
+    static constadorObjetosPersona = 0; //Atributo estatico
+    email = "Valor default email"; //Atributo no estatico
 
     //Creamos un constructor
     constructor(nombre, apellido){
@@ -108,3 +109,7 @@ Empleado.saludar2(empleado1);
 //console.log(persona1.constadorObjetosPersona);
 console.log(Persona.constadorObjetosPersona);
 console.log(Empleado.constadorObjetosPersona);
+
+console.log(persona1.email);
+console.log(empleado1.email);
+//console.log(Persona.email); No se puede acceder desde la clase, ya que no es estatico
