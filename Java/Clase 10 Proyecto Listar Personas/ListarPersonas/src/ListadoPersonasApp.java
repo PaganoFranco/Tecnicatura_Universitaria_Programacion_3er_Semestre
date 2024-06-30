@@ -63,4 +63,4 @@ public class ListadoPersonasApp {
         } //**Fin switch**
         return salir;
     }//**Fin de metodo ejecutarOperacion**
-}
+}//**Fin class ListadoPersonasApp**
