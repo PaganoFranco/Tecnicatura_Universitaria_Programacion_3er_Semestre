@@ -1,6 +1,7 @@
 import psycopg2
 
 conexion = psycopg2.connect(user='postgres', password='SuperAdmin', host='localhost', port='5432', database='test')
+# Corrección de mensajes de error en Postgres
 try:
         with conexion:
                 with conexion.cursor() as cursor:
