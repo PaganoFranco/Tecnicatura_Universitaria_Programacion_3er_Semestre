@@ -8,3 +8,25 @@
 07: 30: 26 PM:WARNING [logger_base.py:16] Mensaje a nivel warning
 07: 30: 26 PM:ERROR [logger_base.py:17] Mensaje a nivel error
 07: 30: 26 PM:CRITICAL [logger_base.py:18] Mensaje a nivel critical
+08: 03: 30 PM:DEBUG [Persona.py:56] 
+        Id Perons: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: Juanperez@gmail.com
+        
+08: 03: 30 PM:DEBUG [Persona.py:58] 
+        Id Perons: None
+        Nombre: Jose
+        Apellido: Lepez
+        Email: LepezJose@gmail.com
+        
+08: 03: 30 PM:DEBUG [Persona.py:60] 
+        Id Perons: 1
+        Nombre: None
+        Apellido: None
+        Email: None
+        
+08: 06: 45 PM:ERROR [conexion.py:26] Ocurrio un error: type object 'Conexion' has no attribute 'DB_PORT'
+08: 07: 45 PM:ERROR [conexion.py:25] Ocurrió un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+08: 09: 25 PM:DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x0000016F6D009580; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+08: 09: 25 PM:DEBUG [conexion.py:37] Se abrió correctamente el cursor: <cursor object at 0x0000016F6CCADE00; closed: 0>
