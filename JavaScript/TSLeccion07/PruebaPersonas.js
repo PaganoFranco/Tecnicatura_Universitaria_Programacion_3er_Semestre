@@ -100,3 +100,9 @@ class Cliente extends Persona {
     }
 }
 
+//Prueba clase persona
+let persona1 = new Persona("Franco", "Pagano", "27");
+console.log(persona1.toString());
+
+let persona2 = new Persona("Julieta", "Quiroga", "27");
+console.log(persona2.toString());
