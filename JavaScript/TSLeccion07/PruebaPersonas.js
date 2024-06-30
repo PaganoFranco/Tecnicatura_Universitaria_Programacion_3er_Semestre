@@ -113,3 +113,10 @@ console.log(empleado1.toString());
 
 let empleado2 = new Empleado("Paloma", "Quiroga", 26, 50);
 console.log(empleado2.toString());
+
+//Prueba clase Cliente
+let cliente1 = new Empleado("Pepe", "Del Pozzi", 22, new Date());
+console.log(cliente1.toString());
+
+let cliente2 = new Empleado("Pepa", "Del Pozzi", 35, new Date());
+console.log(cliente2.toString());
