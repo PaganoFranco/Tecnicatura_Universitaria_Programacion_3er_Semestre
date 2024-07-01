@@ -40,7 +40,11 @@ class Conexion:
                 log.error(f"Ocurrio un error al obtener el pool: {e}")
                 sys.exit()
         else:
-            return cls._pool
+
+    @classmethod
+    def liberarConexion(cls, conexion):
+        cls.obtenerPool().putconn(conexion)
+        log.debug(f"Regresamos la conexion del pool: {conexion}")
 
 if __name__ == "__main__":
     conexoin1 = Conexion.obtenerConexion()
