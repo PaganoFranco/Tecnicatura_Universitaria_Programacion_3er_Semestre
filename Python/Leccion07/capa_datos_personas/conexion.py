@@ -34,7 +34,8 @@ class Conexion:
                                                       password=cls._PASSWORD,
                                                       port=cls._DB_PORT,
                                                       database=cls._DATABASE)
-                log.debud(f"Creacion del pool exitosa: {cls._pool}")
+                log.debug(f"Creacion del pool exitosa: {cls._pool}")
+                return cls._pool
             except Exception as e:
                 log.error(f"Ocurrio un error al obtener el pool: {e}")
                 sys.exit()
@@ -42,4 +43,8 @@ class Conexion:
             return cls._pool
 
 if __name__ == "__main__":
-    pass
+    conexoin1 = Conexion.obtenerConexion()
+    conexoin2 = Conexion.obtenerConexion()
+    conexoin3 = Conexion.obtenerConexion()
+    conexoin4 = Conexion.obtenerConexion()
+    conexoin5 = Conexion.obtenerConexion()
