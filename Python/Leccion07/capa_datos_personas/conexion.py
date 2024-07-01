@@ -41,6 +41,7 @@ class Conexion:
                 sys.exit()
         else:
             return cls._pool
+
     @classmethod
     def liberarConexion(cls, conexion):
         cls.obtenerPool().putconn(conexion)
