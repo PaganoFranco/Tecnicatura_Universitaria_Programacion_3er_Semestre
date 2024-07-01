@@ -187,3 +187,75 @@
 12: 12: 08 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000001735C9018B0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
 12: 12: 08 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000001735C9019C0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
 12: 12: 08 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000001735C901AD0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 23: 22 AM:DEBUG [curson_def_pool.py:11] Inicio del metodo witch y __enter__
+12: 23: 22 AM:DEBUG [conexion.py:37] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000293FB52C810>
+12: 23: 22 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x00000293FD2EE8A0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 23: 22 AM:DEBUG [curson_def_pool.py:29] Dentro del bloque with
+12: 23: 22 AM:DEBUG [curson_def_pool.py:17] Se ejecuta el metodo exit
+12: 23: 22 AM:DEBUG [curson_def_pool.py:20] Ocurrio una excepcion: error de sintaxis en o cerca de «SELET»
+LINE 1: SELET * FROM persona
+        ^
+
+12: 23: 22 AM:DEBUG [conexion.py:48] Regresamos la conexion del pool: <connection object at 0x00000293FD2EE8A0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 23: 40 AM:DEBUG [curson_def_pool.py:11] Inicio del metodo witch y __enter__
+12: 23: 40 AM:DEBUG [conexion.py:37] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000028E4241C810>
+12: 23: 40 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x0000028E4422E8A0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 23: 40 AM:DEBUG [curson_def_pool.py:29] Dentro del bloque with
+12: 23: 40 AM:DEBUG [curson_def_pool.py:31] [(2, 'Julieta', 'Quiroga', 'juliquiroga@gmail.com'), (6, 'Marcos', 'Español', 'Españaarriba@gmail.com'), (4, 'Juan Carlos', 'Zacas', 'ZacasJuan@gmail.com'), (5, 'Juan Pablo', 'Del Pozzi', 'JuanPDP@gmail.com'), (9, 'Maria', 'Esperanza', 'MaEspe@gmail.com'), (10, 'Maria', 'Esperanza', 'MaEspe@gmail.com'), (11, 'Paloma', 'Quiroga', 'Palo@gmail.com'), (1, 'Franco', 'Pagano', 'FrancoP@gmail.com')]
+12: 23: 40 AM:DEBUG [curson_def_pool.py:17] Se ejecuta el metodo exit
+12: 23: 40 AM:DEBUG [curson_def_pool.py:23] Commit de la transaccion
+12: 23: 40 AM:DEBUG [conexion.py:48] Regresamos la conexion del pool: <connection object at 0x0000028E4422E8A0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 27: 02 AM:DEBUG [curson_def_pool.py:11] Inicio del metodo witch y __enter__
+12: 27: 02 AM:DEBUG [conexion.py:37] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000216766F8850>
+12: 27: 02 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x00000216784FECE0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 27: 02 AM:DEBUG [curson_def_pool.py:17] Se ejecuta el metodo exit
+12: 27: 02 AM:DEBUG [curson_def_pool.py:23] Commit de la transaccion
+12: 27: 02 AM:DEBUG [conexion.py:48] Regresamos la conexion del pool: <connection object at 0x00000216784FECE0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 27: 02 AM:DEBUG [persona_dao.py:80] 
+        Id Perons: 1
+        Nombre: Franco
+        Apellido: Pagano
+        Email: FrancoP@gmail.com
+        
+12: 27: 02 AM:DEBUG [persona_dao.py:80] 
+        Id Perons: 2
+        Nombre: Julieta
+        Apellido: Quiroga
+        Email: juliquiroga@gmail.com
+        
+12: 27: 02 AM:DEBUG [persona_dao.py:80] 
+        Id Perons: 4
+        Nombre: Juan Carlos
+        Apellido: Zacas
+        Email: ZacasJuan@gmail.com
+        
+12: 27: 02 AM:DEBUG [persona_dao.py:80] 
+        Id Perons: 5
+        Nombre: Juan Pablo
+        Apellido: Del Pozzi
+        Email: JuanPDP@gmail.com
+        
+12: 27: 02 AM:DEBUG [persona_dao.py:80] 
+        Id Perons: 6
+        Nombre: Marcos
+        Apellido: Español
+        Email: Españaarriba@gmail.com
+        
+12: 27: 02 AM:DEBUG [persona_dao.py:80] 
+        Id Perons: 9
+        Nombre: Maria
+        Apellido: Esperanza
+        Email: MaEspe@gmail.com
+        
+12: 27: 02 AM:DEBUG [persona_dao.py:80] 
+        Id Perons: 10
+        Nombre: Maria
+        Apellido: Esperanza
+        Email: MaEspe@gmail.com
+        
+12: 27: 02 AM:DEBUG [persona_dao.py:80] 
+        Id Perons: 11
+        Nombre: Paloma
+        Apellido: Quiroga
+        Email: Palo@gmail.com
+        
