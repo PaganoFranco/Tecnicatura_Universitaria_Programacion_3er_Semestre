@@ -40,15 +40,23 @@ class Conexion:
                 log.error(f"Ocurrio un error al obtener el pool: {e}")
                 sys.exit()
         else:
-
+            return cls._pool
     @classmethod
     def liberarConexion(cls, conexion):
         cls.obtenerPool().putconn(conexion)
         log.debug(f"Regresamos la conexion del pool: {conexion}")
 
+    @classmethod
+    def cerrarConexiones(cls):
+        cls.obtenerPool().closeall()
+
 if __name__ == "__main__":
     conexoin1 = Conexion.obtenerConexion()
+    Conexion.liberarConexion(conexoin1)
     conexoin2 = Conexion.obtenerConexion()
+    Conexion.liberarConexion(conexoin2)
     conexoin3 = Conexion.obtenerConexion()
+    Conexion.liberarConexion(conexoin3)
     conexoin4 = Conexion.obtenerConexion()
     conexoin5 = Conexion.obtenerConexion()
+    conexoin6 = Conexion.obtenerConexion()
