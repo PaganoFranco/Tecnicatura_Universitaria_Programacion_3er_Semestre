@@ -159,3 +159,18 @@
         Apellido: Quiroga
         Email: Palo@gmail.com
         
+11: 57: 41 PM:ERROR [conexion.py:39] Ocurrio un error al obtener el pool: module 'logging' has no attribute 'debud'
+11: 58: 15 PM:DEBUG [conexion.py:37] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000022AE5AAF2D0>
+11: 59: 01 PM:DEBUG [conexion.py:37] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000002480221F2D0>
+11: 59: 01 PM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x00000248022B17A0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+11: 59: 01 PM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x00000248022B18B0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 00: 00 AM:DEBUG [conexion.py:37] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001D876CF9C50>
+12: 00: 00 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000001D876CE17A0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 00: 00 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000001D876CE18B0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 00: 00 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000001D876CE19C0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 00: 17 AM:DEBUG [conexion.py:37] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000002D29EC4F6D0>
+12: 00: 17 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000002D29ECE57A0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 00: 17 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000002D29ECE58B0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 00: 17 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000002D29ECE59C0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 00: 17 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000002D29ECE5AD0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+12: 00: 17 AM:DEBUG [conexion.py:19] Conexion obtenida del pool: <connection object at 0x000002D29ECE5BE0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
