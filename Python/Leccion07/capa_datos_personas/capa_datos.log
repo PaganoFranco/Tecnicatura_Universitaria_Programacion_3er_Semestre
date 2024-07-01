@@ -109,3 +109,53 @@
         Email: None
         
 11: 36: 59 PM:DEBUG [persona_dao.py:67] Personas eliminadas: 1
+11: 39: 31 PM:DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x000001F1DD35ACE0; dsn: 'user=postgres password=xxx dbname=test host=127.0.0.1 port=5432', closed: 0>
+11: 39: 31 PM:DEBUG [conexion.py:37] Se abrió correctamente el cursor: <cursor object at 0x000001F1DD3BEC00; closed: 0>
+11: 39: 31 PM:DEBUG [persona_dao.py:82] 
+        Id Perons: 1
+        Nombre: Franco
+        Apellido: Pagano
+        Email: FrancoP@gmail.com
+        
+11: 39: 31 PM:DEBUG [persona_dao.py:82] 
+        Id Perons: 2
+        Nombre: Julieta
+        Apellido: Quiroga
+        Email: juliquiroga@gmail.com
+        
+11: 39: 31 PM:DEBUG [persona_dao.py:82] 
+        Id Perons: 4
+        Nombre: Juan Carlos
+        Apellido: Zacas
+        Email: ZacasJuan@gmail.com
+        
+11: 39: 31 PM:DEBUG [persona_dao.py:82] 
+        Id Perons: 5
+        Nombre: Juan Pablo
+        Apellido: Del Pozzi
+        Email: JuanPDP@gmail.com
+        
+11: 39: 31 PM:DEBUG [persona_dao.py:82] 
+        Id Perons: 6
+        Nombre: Marcos
+        Apellido: Español
+        Email: Españaarriba@gmail.com
+        
+11: 39: 31 PM:DEBUG [persona_dao.py:82] 
+        Id Perons: 9
+        Nombre: Maria
+        Apellido: Esperanza
+        Email: MaEspe@gmail.com
+        
+11: 39: 31 PM:DEBUG [persona_dao.py:82] 
+        Id Perons: 10
+        Nombre: Maria
+        Apellido: Esperanza
+        Email: MaEspe@gmail.com
+        
+11: 39: 31 PM:DEBUG [persona_dao.py:82] 
+        Id Perons: 11
+        Nombre: Paloma
+        Apellido: Quiroga
+        Email: Palo@gmail.com
+        
