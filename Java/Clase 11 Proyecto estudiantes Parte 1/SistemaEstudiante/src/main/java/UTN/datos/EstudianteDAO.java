@@ -100,22 +100,31 @@ public class EstudianteDAO {
         }// Fin finally
         return false;
     } // Fin método agregarEstudiante
-    
+
     public static void main(String[] args) {
+        // Listar los estudiantes
         var estudianteDao = new EstudianteDAO();
         System.out.println("Listado de estudiantes: ");
         List<Estudiante> estudiantes = estudianteDao.ListarEstudiantes();
         estudiantes.forEach(System.out::println); //Funcion lambda para imprimir
 
-        //Buscar por id
-        var estudiante1 = new Estudiante(1);
-        System.out.println("Estudiantes antes de la busqueda: "+estudiante1);
-        var encontrado = estudianteDao.buscarEstudiantePorId(estudiante1);
-        if(encontrado){
-            System.out.println("Estudiante encontrado: "+estudiante1);
-        } else {
-            System.out.println("No se encontro el estudiante: "+estudiante1.getIdEstudiante());
-        }
+        // Agregar estudiante
+        var nuevoEstudiante = new Estudiante("Carlos", "Peralta", "111415555", "carlosP@mail.com");
+        var agregado = estudianteDao.agregarEstudiante(nuevoEstudiante);
+            if (agregado)
+                System.out.println("Estudiante agregado: " + nuevoEstudiante);
+            else
+                System.out.println("No se a agregado estudiante: " + nuevoEstudiante);
+
+        // Buscar por id
+        // var estudiante1 = new Estudiante(1);
+        // System.out.println("Estudiantes antes de la busqueda: "+estudiante1);
+        // var encontrado = estudianteDao.buscarEstudiantePorId(estudiante1);
+        // if(encontrado){
+        //     System.out.println("Estudiante encontrado: "+estudiante1);
+        // } else {
+        //     System.out.println("No se encontro el estudiante: "+estudiante1.getIdEstudiante());
+        // }
     }
 
 } // Fin Class
