@@ -130,8 +130,17 @@ public class EstudianteDAO {
     }  // Fin Método modificarEstudiante
 
     public static void main(String[] args) {
-        // Listar los estudiantes
+
         var estudianteDao = new EstudianteDAO();
+        // Modiciar estudiante
+        var estudianteModificado = new Estudiante(1, "Juan Carlos", "Juarez", "123455656", "juarezjuan@mail.com");
+        var modificado = estudianteDao.modificarEstudiante(estudianteModificado);
+        if (modificado)
+            System.out.println("Estudiante modificado " + estudianteModificado);
+        else
+            System.out.println("No se modifico el estudiante " + estudianteModificado);
+
+        // Listar los estudiantes
         System.out.println("Listado de estudiantes: ");
         List<Estudiante> estudiantes = estudianteDao.ListarEstudiantes();
         estudiantes.forEach(System.out::println); //Funcion lambda para imprimir
